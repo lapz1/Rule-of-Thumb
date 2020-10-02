@@ -1,0 +1,25 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Ing. Luis Andres Pena Zuniga",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lapz1/Rule-of-Thumb.git"
+  },
+  "keywords": [
+    "zemoga",
+    "ui-test",
+    "react",
+    "nodejs"
+  ],
+  "author": "Ing. Luis Andres Pena Zuniga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lapz1/Rule-of-Thumb/issues"
+  },
+  "homepage": "https://github.com/lapz1/Rule-of-Thumb#readme"
+}
