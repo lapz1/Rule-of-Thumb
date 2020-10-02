@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Express NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lapz1/Rule-of-Thumb.git"
+  },
+  "keywords": [
+    "zemoga",
+    "ui-test",
+    "Express",
+    "NodeJS"
+  ],
+  "author": "Ing. Luis Andres Pena Zuniga M.Sc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lapz1/Rule-of-Thumb/issues"
+  },
+  "homepage": "https://github.com/lapz1/Rule-of-Thumb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
