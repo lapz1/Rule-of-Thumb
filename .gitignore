@@ -1,3 +1,6 @@
 frontend/node_modules/
 frontend/package-lock.json
 frontend/build
+backend/config/config.env
+backend/node_modules/
+backend/package-lock.json
