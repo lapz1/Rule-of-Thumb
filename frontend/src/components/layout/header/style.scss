@@ -1,0 +1,116 @@
+@import "./../../../styles/variables";
+@import "./../../../styles/mixins";
+
+.header{
+    background: url("./../../../assets/images/pope.png") no-repeat center top;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+	.trasnparent{
+		background: url("./../../../assets/layers/header-transparent.png") no-repeat center top;
+		color: #fff;
+		display: block;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+
+    .container{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+        width: $container-width;
+    }
+
+    .menu{
+        position: absolute;
+        right: 94px;
+        top: 50px;
+        color: #FFF;
+		float: right;
+        .items{
+            @include reset();
+            display: flex;
+            flex-direction: row;
+            .item{
+                @include reset();
+                list-style-type: none;
+                margin-left: 40px;
+                .link{
+                    color: #FFF;
+                    text-decoration: none;
+                    transition: color ease 0.5s;
+                }
+                .link:hover{
+                    color: #999;
+                }
+            }
+            .item:nth-last-child(2){
+                margin-left: 5px;
+            }
+            .item:nth-last-child(2)::before{
+                content:"/ ";
+            }			
+			.search{				
+				position: absolute;
+				top: 0;
+				background: url(./../../../assets/icons/search.png) no-repeat;
+				display: block;
+				height: 30px;
+				width: 30px;
+			}
+        }
+    }
+
+    .division{
+        .title{
+            @include reset();
+			position: absolute;
+			left: 60px;
+			top: 40px;
+            color: #FFF;
+            font-size: 2em;
+			font-weight: normal;
+            margin-bottom: 15px;            
+        }
+    }   
+}
+
+
+@media (max-width: 640px){
+    .header{
+        background: url(./../../../assets/images/pope.png) no-repeat 0px -323px;
+        height: 800px;
+        .container{
+            display: block;
+            width:$container-width-mobile;
+        }
+        .menu{
+            margin: 10px 10px 0 0;
+            position: relative;
+            right: 0;
+            top: 0;
+            .items{
+                flex-direction: column;
+                .item{
+                    @include reset();
+                    margin-bottom: 5px;
+                    text-align: right;
+					font-weight: normal;
+                    .link{
+					
+                    }
+                }
+                .item:last-child{
+                    margin-left: 0;
+                }
+                .item:last-child::before{
+                    content:"";
+                }
+            }
+        }
+    }   
+}

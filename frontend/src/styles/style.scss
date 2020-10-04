@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import "fonts";
+@import "mixins";
+
+body{
+  @include reset();
+  font-family: "Lato";
+}
