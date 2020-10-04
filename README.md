@@ -6,7 +6,9 @@ The project was done in three stages. The first one, was the Backend that can be
 
 # INTERACTIVE
 
-The backend was programmed in Javascript with NodeJS and Express, for installation follow the next steps.
+The backend was programmed in Javascript with NodeJS and Express, the idea was to create a database to save and preserve data information so I used MongoDB.
+
+For installation follow the next steps.
 
   - Download or clone the backend folder.
   - Open the NodeJS console go to source folder and execute the command: npm install
@@ -15,7 +17,9 @@ The backend was programmed in Javascript with NodeJS and Express, for installati
 
 # LAYOUT
 
-The frontend was programmed in Javascript with NodeJS and React, for installation follow the next steps.
+The frontend was programmed in Javascript with NodeJS, React and SASS. Also I download and user de Lato Font from https://fonts.google.com/specimen/Lato
+
+For installation follow the next steps.
 
   - Download or clone the frontend folder.
   - Open the NodeJS console go to source folder and execute the command: npm install
