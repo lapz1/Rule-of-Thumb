@@ -65,6 +65,55 @@
         }
     }
 
+	.box{
+        @include reset();
+		width: 500px;
+		height: 450px;
+		display: block;
+		position: absolute;
+		top: 170px;
+		left: 60px;
+		color: #FFF;
+		background: rgba(100, 100, 100, 0.8);
+		.pre-title{
+			margin: 40px 0 0 28px;
+		}
+		.title{
+			font-size: 60px;
+			margin-left: 26px;
+		}
+		.text{
+			margin: 18px 30px 0 30px;
+			text-align: left;
+			font-size: 20px;
+			font-weight: normal;
+		}
+		.info{
+		    margin: 24px 0 0 50px;
+			text-decoration: underline;
+		}
+		.question{
+		    margin: 45px 0 0 30px;
+			font-size: 23px;
+		}
+		.up{
+			background: rgba(0, 0, 220, 0.6) url(./../../../assets/icons/bup.png) no-repeat center;			
+			height: 75px;
+			width: 50%;
+			display: block;
+			float: left;
+			margin-top: 25px;			
+		}
+		.down{
+			background: rgba(255, 255, 0, 0.6) url(./../../../assets/icons/bdown.png) no-repeat center;
+			height: 75px;
+			width: 50%;
+			display: block;
+			float: right;
+			margin-top: 25px;				
+		}		
+	}
+
     .division{
         .title{
             @include reset();
@@ -76,7 +125,7 @@
 			font-weight: normal;
             margin-bottom: 15px;            
         }
-    }   
+    }
 }
 
 

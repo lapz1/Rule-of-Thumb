@@ -16,8 +16,8 @@ export default (props) => {
 				<div className="category">{props.category}</div>
 				<div className="text">{props.text}</div>
 			</div>
-			<div className="value1">{props.value}</div>
-			<div className="value2">{props.value}</div>
+			<div className="value1">{props.value1}</div>
+			<div className="value2">{props.value2}</div>
         </article>
     );
 };

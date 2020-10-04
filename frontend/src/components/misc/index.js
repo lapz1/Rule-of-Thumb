@@ -17,10 +17,10 @@ export default () => {
 				</div>
                 <div className="votes">Votes</div>
 				<div className="items">
-					<Item srcimg={background1} category="Entertainment" value="64" title="Kanye West" text="Is an American rapper, record producer, and fashion designer. Throughout his career, West has been responsible for cultural movements and musical progressions within mainstream hip-hop and popular music at large." />
-					<Item srcimg={background2} category="Business" value="36" title="Mark Zuckerberg" text="Is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding Facebook, Inc. and serves as its chairman, chief executive officer, and controlling shareholder." />
-					<Item srcimg={background3} category="Politics" value="36" title="Cristina Fernández de Kirchner" text="Is an Argentine lawyer and politician who has served as the Vice President of Argentina since 2019. She also previously served as President of Argentina from 2007 to 2015 and the First Lady during her husband, Néstor Kirchner's tenure." />
-					<Item srcimg={background4} category="Entertainment" value="64" title="Malala Yousafzai" text="is a Pakistani activist for female education and the youngest Nobel Prize laureate." />
+					<Item srcimg={background1} category="Entertainment" value1="64" value2="36" title="Kanye West" text="Is an American rapper, record producer, and fashion designer. Throughout his career, West has been responsible for cultural movements and musical progressions within mainstream hip-hop and popular music at large." />
+					<Item srcimg={background2} category="Business" value1="36" value2="64" title="Mark Zuckerberg" text="Is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding Facebook, Inc. and serves as its chairman, chief executive officer, and controlling shareholder." />
+					<Item srcimg={background3} category="Politics" value1="36" value2="64" title="Cristina Fernández de Kirchner" text="Is an Argentine lawyer and politician who has served as the Vice President of Argentina since 2019. She also previously served as President of Argentina from 2007 to 2015 and the First Lady during her husband, Néstor Kirchner's tenure." />
+					<Item srcimg={background4} category="Entertainment" value1="64" value2="36" title="Malala Yousafzai" text="is a Pakistani activist for female education and the youngest Nobel Prize laureate." />
 				</div>
 				<div className="box-botton">
 					<div className="box-right">Submit a Name</div>
