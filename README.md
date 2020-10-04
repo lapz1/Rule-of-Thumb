@@ -2,7 +2,7 @@
 
 Hi, first of all I like to thanks for the oppotunity to be a part of Zemoga, I must say that one of the biggest challenges of this type of technical test is TIME 'cause I'm working from monday to saturday, but I still tried to do my best to show my programming skills.
 
-The project was made in three steps. The first one, was the Backend that can be consult on the INTERACTIVE branch, the second one was the Frontend that is on the LAYOUT branch and finally a merge with the MASTER.
+The project was done in three stages. The first one, was the Backend that can be consult on the INTERACTIVE branch, the second one was the Frontend that is on the LAYOUT branch and finally a merge with the MASTER.
 
 # INTERACTIVE
 
