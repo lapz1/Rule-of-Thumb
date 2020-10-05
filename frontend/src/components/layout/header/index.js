@@ -1,11 +1,16 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import Menu from "./menu";
 import Box from "./box";
+import Login from './login';
+import Register from './register';
 import "./style.scss";
 
 export default () => {
   return (  
     <header className="header">
+	  <Route path="/signup" component={Login} />
+	  <Route path="/signin" component={Register} />
 	  <div className="trasnparent"></div>
       <div className="container">
         <Menu />

@@ -114,6 +114,15 @@
 		}		
 	}
 
+	.login{
+		position: absolute;
+		right: 180px;
+		top: 83px;
+		background: #FFF;
+		border: #CCC 1px solid;
+		z-index: 1;
+	}
+
     .division{
         .title{
             @include reset();
