@@ -32,5 +32,16 @@ The env file was sent by email, this has the backend url.
 
 The master is a combination between the frontend and the backend, you have to run the INTERACTIVE and the LAYOUT at the same time.
 
+To use the APP, follow the steps below.
+
+  - Register (Sign up Form)
+  - Login (Sign in Form)
+  - Vote (By clicking on the Thumb Up or Down button) NOTE: Header Thumb button still on development
+  - Add new person (By using Name, Category, Descritption, and URL Image.)
+    Example: Name: Bart Simpsom
+             Category: TV Show
+             Description: Bart is a cartoon created by FOX and is one of our favorite characters in THE SIMPSOMS.
+             urlimage: https://i1.wp.com/www.sopitas.com/wp-content/uploads/2012/02/JEREMYBARTSIM.jpg
+
 
 Thaks again, I really like to be part of your team, hope to see you soon!!!
