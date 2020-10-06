@@ -106,6 +106,23 @@
 				margin-left: 6px;
 				border: #FFF 1px solid;
 			}
+			.bar1{
+				background: rgba(0, 220, 220, 0.6);			
+				height: 45px;
+				width: 30px;
+				display: block;
+				float: left;
+				margin-top: -75px;
+			}
+			.bar2{
+				background: rgba(255, 180, 0, 0.8);
+				height: 45px;
+				width: 30px;
+				display: block;
+				float: right;
+				margin-top: -75px;
+				margin-right: 25px;
+			}
 			.value1{
 				font-size: 25px;
 				position: absolute;

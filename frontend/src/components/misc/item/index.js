@@ -7,7 +7,15 @@ export default (props) => {
 	const auth = useContext(AuthContext);
     const [up, setUp] = useState(props.value1);
     const [down, setDown] = useState(props.value2);
-		
+	
+	const style1 = {
+		width: up + down == 0 ? "50%" : parseInt(up * 100 / (up + down)) + "%"
+	};
+	
+	const style2 = {
+		width: up + down == 0 ? "50%" : parseInt(down * 100 / (up + down)) + "%"
+	};
+	
 	const sendThumbUp = () => {
 		const token = auth.user.token;
 		const url = `${process.env.REACT_APP_API_URL}/api/votes`;
@@ -58,8 +66,7 @@ export default (props) => {
 			}>
 				<div className="title">{props.title}</div>
 				<div className="category">{props.category}</div>
-				<div className="text">{props.text}</div>
-				
+				<div className="text">{props.text}</div>	
           
 				<a className="thumbUp" onClick={() => {
 					sendThumbUp();
@@ -68,8 +75,10 @@ export default (props) => {
 					sendThumbDown();
 				}}></a>
 			</div>
-			<div className="value1">{parseInt(up * 100 / (up + down))}</div>
-			<div className="value2">{parseInt(down * 100 / (up + down))}</div>
+			<div className="bar1" style={style1}></div>
+			<div className="bar2" style={style2}></div>
+			<div className="value1">{up + down == 0 ? 50 : parseInt(up * 100 / (up + down))}</div>
+			<div className="value2">{up + down == 0 ? 50 : parseInt(down * 100 / (up + down))}</div>
         </article>
     );
 };
