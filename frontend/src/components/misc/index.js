@@ -14,6 +14,7 @@ function Mix() {
 		setTimeout(()=>{
 			const url = `${process.env.REACT_APP_API_URL}/api/persons`;
 			Axios.get(url).then((response) => {
+				console.log(response.data);
 				setItems([...items, ...response.data]);
 			});
 		}, 500);		
@@ -33,10 +34,14 @@ function Mix() {
 				</div>
                 <div className="votes">Votes</div>
 				<div className="items">
-					<Item srcimg={background1} category="Entertainment" value1="64" value2="36" title="Kanye West" text="Is an American rapper, record producer, and fashion designer. Throughout his career, West has been responsible for cultural movements and musical progressions within mainstream hip-hop and popular music at large." />
-					<Item srcimg={background2} category="Business" value1="36" value2="64" title="Mark Zuckerberg" text="Is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding Facebook, Inc. and serves as its chairman, chief executive officer, and controlling shareholder." />
-					<Item srcimg={background3} category="Politics" value1="36" value2="64" title="Cristina Fernández de Kirchner" text="Is an Argentine lawyer and politician who has served as the Vice President of Argentina since 2019." />
-					<Item srcimg={background4} category="Entertainment" value1="64" value2="36" title="Malala Yousafzai" text="is a Pakistani activist for female education and the youngest Nobel Prize laureate." />
+					{items && items.map((item) => (
+						<Item id={item._id} srcimg={item.imagesrc} category={item.category} value1={item.thumbUp} value2={item.thumbDown} title={item.name} text={item.description} />
+					))}
+				
+					<Item id="1" srcimg={background1} category="Entertainment" value1="64" value2="36" title="Kanye West" text="Is an American rapper, record producer, and fashion designer. Throughout his career, West has been responsible for cultural movements and musical progressions within mainstream hip-hop and popular music at large." />
+					<Item id="2" srcimg={background2} category="Business" value1="36" value2="64" title="Mark Zuckerberg" text="Is an American media magnate, internet entrepreneur, and philanthropist. He is known for co-founding Facebook, Inc. and serves as its chairman, chief executive officer, and controlling shareholder." />
+					<Item id="3" srcimg={background3} category="Politics" value1="36" value2="64" title="Cristina Fernández de Kirchner" text="Is an Argentine lawyer and politician who has served as the Vice President of Argentina since 2019." />
+					<Item id="4" srcimg={background4} category="Entertainment" value1="64" value2="36" title="Malala Yousafzai" text="is a Pakistani activist for female education and the youngest Nobel Prize laureate." />
 				</div>
 				<div className="box-botton">
 					<div className="box-right">Submit a Name</div>

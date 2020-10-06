@@ -1,5 +1,6 @@
 const usersModel = require('./../../models/users');
 const personsModel = require('./../../models/persons');
+const voteModel = require('./../../models/votes');
 
 const verifyPerson = (req, res, next) => {
 	var name = req.body.name;
@@ -41,8 +42,11 @@ const loadPersons = (req, res) => {
 const createPersons = (req, res) => {
 	const person = {
 		name: req.body.name,
+		category: req.body.category,
 		description: req.body.description,
-		imagesrc: req.body.imagesrc
+		imagesrc: req.body.imagesrc,
+		thumbUp: 0,
+		thumbDown: 0
 	};
 
 	personsModel.create(person)

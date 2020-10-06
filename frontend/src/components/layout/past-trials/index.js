@@ -5,8 +5,8 @@ function PastTrial() {
 	return (
 	  <div>
 		<p>
-		  Past Trials              
-		</p>            
+		  Past Trials
+		</p>
 	  </div>
 	);
 

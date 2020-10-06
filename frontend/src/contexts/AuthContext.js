@@ -13,7 +13,7 @@ function AuthProvider(props){
 				name: localStorage.getItem("name"),
 				token: token,
 				id: localStorage.getItem("id")
-			});
+			});	
 			setIsAuth(true);
 		}else{
 			setIsAuth(false);
@@ -23,7 +23,7 @@ function AuthProvider(props){
 	const checkAuth = () => {
 		return isAuth;
 	};
-
+	
 	const login = (user) => {
 		setIsAuth(true);
 

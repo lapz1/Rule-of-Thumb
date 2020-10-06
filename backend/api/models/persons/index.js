@@ -14,7 +14,15 @@ const personsSchema = new Schema({
 	imagesrc: {
 		type: String,
 		required: true
-	}
+	},
+	thumbUp: {
+		type: Number,
+		required: true
+	},
+	thumbDown: {
+		type: Number,
+		required: true
+	},
 },{
     timestamps: true
 });

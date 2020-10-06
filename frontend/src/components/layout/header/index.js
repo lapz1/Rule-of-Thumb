@@ -4,6 +4,7 @@ import Menu from "./menu";
 import Box from "./box";
 import Login from './login';
 import Register from './register';
+import New from './new';
 import "./style.scss";
 
 export default () => {
@@ -11,6 +12,7 @@ export default () => {
     <header className="header">
 	  <Route path="/signup" component={Login} />
 	  <Route path="/signin" component={Register} />
+	  <Route path="/new" component={New} />
 	  <div className="trasnparent"></div>
       <div className="container">
         <Menu />

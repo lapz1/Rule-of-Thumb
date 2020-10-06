@@ -28,7 +28,8 @@ function Login() {
       const token = response.data.token;
       const name = response.data.name;
       const id = response.data.id;
-      const username = response.data.username;
+      const username = response.data.user;
+	  
       if(!!token){
         
         setTimeout(()=>{
@@ -39,13 +40,16 @@ function Login() {
             username
           };
           auth.login(user);
+		  alert(response.data.resp);
+		  
           history.push("/");
         }, 3000);
-        
-      }
+      }else{  
+		alert(response.data.resp);
+	  }
     })
     .catch(err=>{
-      
+      alert(err);
     })    
   }
 

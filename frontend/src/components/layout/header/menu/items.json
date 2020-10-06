@@ -1,10 +1,17 @@
 [
+	{
+    "text": "Home",
+    "link": "/",
+	"component": "Misc"
+    },
     {
     "text": "Past Trials",
-    "link": "/past-trials"
+    "link": "/past-trials",
+	"component": "PastTrials"
     },
     {
     "text": "How It Works",
-    "link": "/how-works"
+    "link": "/how-works",
+	"component": "PastTrials"
     }
 ]

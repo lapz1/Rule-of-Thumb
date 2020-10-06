@@ -61,7 +61,7 @@ const createUser = (req, res) => {
 
 	usersModel.create(user)
 	.then(() => {
-		res.send({resp: 'User created'});
+		res.send({resp: 'User created, Please Login'});
 	});
 }
 
@@ -92,6 +92,7 @@ const loginUser = (req, res) => {
 		if(bcrypt.compareSync(user.password, users[0].password)){
 			const token = jwt.sign({_id: users[0]._id}, config.server.tokenKey);
 			res.send(JSON.stringify({
+				id: users[0]._id,
 				token: token, 
 				user: user.username,
 				resp: 'User: ' + user.username + ' Token: ' + token

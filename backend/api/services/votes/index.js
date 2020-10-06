@@ -21,10 +21,22 @@ const createVotes = (req, res) => {
 		userId: req._id
 	};
 
-	votesModel.create(vote)
-	.then(() => {
-		res.send({resp: 'Vote created'});
-	});
+console.log("entro");
+	personsModel.findById(req.body.personsId)
+	.then(person=>{		
+		if(req.body.thumb){			
+			person.thumbUp = person.thumbUp + 1;
+		}else{
+			person.thumbDown = person.thumbDown + 1;
+		}
+		personsModel.findByIdAndUpdate(req.body.personsId, person)
+		.then(() => {
+			votesModel.create(vote)
+			.then(() => {
+				res.send({resp: 'Vote created'});
+			});
+		});
+	});	
 }
 
 module.exports = {
