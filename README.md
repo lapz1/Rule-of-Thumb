@@ -14,6 +14,7 @@ For installation follow the next steps.
   - Open the NodeJS console go to source folder and execute the command: npm install
   - For launch the application execute the command: node index.js
 
+The env file was sent by email, this has the database settings.
 
 # LAYOUT
 
@@ -25,9 +26,11 @@ For installation follow the next steps.
   - Open the NodeJS console go to source folder and execute the command: npm install
   - For launch the application execute the command: npm start
 
+The env file was sent by email, this has the backend url.
+
 # MASTER
 
-Actually I still working on the merge application.
+The master is a combination between the frontend and the backend, you have to run the INTERACTIVE and the LAYOUT at the same time.
 
 
 Thaks again, I really like to be part of your team, hope to see you soon!!!
